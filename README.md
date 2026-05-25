@@ -429,39 +429,20 @@ print(geometry)
 ```text
 Underwater-Pipeline-Geometric-Perception/
 │
-├── assets/
-│   ├── main_offline.py     <- Offline 
-│   ├── main_live.py        <- Live 
-│   ├── detect.py           <- YOLOv8n inference (PyTorch & ONNX)
-│   ├── geolocation.py      <- 
-│
+├── assets/                 <- Figures, demo GIFs, and README visuals
 ├── models/
 │   └── README.md           <- Models note
-
 │
 ├── src/
-│   ├── segmentation/
-│   ├── geometry/
-│   ├── onnx_inference/
-│   ├── visualization/
-│   └── utils/
-│
-├── scripts/
-│   ├── train.py
-│   ├── export_onnx.py
-│   ├── run_onnx_inference.py
-│   ├── evaluate_segmentation.py
-│   ├── evaluate_geometry.py
-│   └── benchmark_runtime.py
+│   ├── main_offline.py     <- Offline video perception pipeline
+│   ├── main_live.py        <- Live camera deployment launcher
+│   ├── detect.py           <- YOLOv8n inference (PyTorch & ONNX)
+│   └── geometry.py         <- PCA-based geometric parameter extraction
 │
 ├── notebooks/
-│   ├── geometry_demo.ipynb
-│   └── evaluation_analysis.ipynb
+│   └── Pipeline__Geometric_Perception_Demo.ipynb  <- End-to-end evaluation and visualization demo
 │
-├── paper/
-│   └── paper.pdf
-│
-├── requirements.txt
+├── requirements.txt        <- Python dependencies
 ├── LICENSE
 └── README.md
 ```
@@ -475,7 +456,7 @@ If you use this work in your research, please cite:
 ```bibtex
 @article{ghitri2026pipeline,
   title   = {Lightweight Underwater Pipeline Geometric Perception for Embedded AI Deployment},
-  author  = {Ghitri, Hamza and Belgrana, Fatima Zohra},
+  author  = {Ghitri, Hamza},
   year    = {2026},
   journal = {IEEE Conference Submission}
 }
